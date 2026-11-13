@@ -1,0 +1,8 @@
+{
+  "name": "SIYANKES",
+  "description": "Sistem Informasi Layanan Kesehatan Evakuasi Pasien",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

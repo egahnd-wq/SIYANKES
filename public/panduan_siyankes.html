@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Panduan Penggunaan & Aturan Sistem SIYANKES</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #111;
+      line-height: 1.6;
+      font-size: 11pt;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 3px double #0d381c;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .kop-text {
+      text-align: center;
+      flex: 1;
+    }
+    .kop-text h2 {
+      margin: 0;
+      font-size: 13pt;
+      letter-spacing: 1px;
+      color: #0b2e15;
+    }
+    .kop-text h3 {
+      margin: 2px 0;
+      font-size: 14pt;
+      font-weight: bold;
+      color: #000;
+    }
+    .kop-text p {
+      margin: 0;
+      font-size: 9pt;
+      color: #555;
+    }
+    h1 {
+      font-size: 14pt;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 20px 0 10px 0;
+      color: #0b2e15;
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 12pt;
+      color: #0d381c;
+      margin-top: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 11pt;
+      color: #1a4d2e;
+      margin-top: 15px;
+    }
+    p, li {
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+    ul, ol {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+    .box-info {
+      background: #f4f8f5;
+      border-left: 4px solid #0d381c;
+      padding: 10px 15px;
+      margin: 15px 0;
+      font-size: 10.5pt;
+    }
+    .table-rules {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 10pt;
+    }
+    .table-rules th, .table-rules td {
+      border: 1px solid #bbb;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    .table-rules th {
+      background-color: #0d381c;
+      color: white;
+      text-transform: uppercase;
+      font-size: 9.5pt;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: right;
+      font-size: 10pt;
+    }
+    .signature {
+      margin-top: 30px;
+      display: inline-block;
+      text-align: center;
+    }
+    .no-print {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .btn-print {
+      background: #0d381c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 11pt;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    @media print {
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print">
+    <button class="btn-print" onclick="window.print()">📥 Cetak / Simpan sebagai PDF (Ctrl + P)</button>
+  </div>
+
+  <div class="header">
+    <div style="font-weight: bold; font-size: 10pt; text-align: center; width: 60px;">
+      TNI AD<br>KODAM XVII/CEN
+    </div>
+    <div class="kop-text">
+      <h2>KOMANDO DAERAH MILITER XVII / CENDERAWASIH</h2>
+      <h3>KESEHATAN</h3>
+      <p>Jalan Ahmad Yani No. 8, Jayapura, Papua</p>
+    </div>
+    <div style="font-weight: bold; font-size: 10pt; text-align: center; width: 60px;">
+      KESDAM
+    </div>
+  </div>
+
+  <h1>PANDUAN OPERASIONAL & ATURAN PENGELOLAAN AKUN <br>SISTEM INFORMASI LAYANAN KESEHATAN EVAKUASI PASIEN (SIYANKES)</h1>
+  <p style="text-align: center; font-size: 10pt; font-family: monospace;">Versi Sistem: 2.6.7 | Edisi: Militer / Operasional Aktif</p>
+
+  <div class="box-info">
+    <strong>RINGKASAN EKSEKUTIF:</strong> Dokumen panduan resmi ini mencakup petunjuk operasional, kebijakan hak akses, aturan nomor surat unik, serta <strong>Prosedur Penghapusan (Delete) Akun Pengguna</strong> untuk seluruh tingkatan akun di dalam sistem SIYANKES Kesdam XVII/Cenderawasih.
+  </div>
+
+  <h2>I. PANDUAN MENJALANKAN APLIKASI</h2>
+  <ol>
+    <li><strong>Akses Alamat Aplikasi:</strong> Buka peramban web (Google Chrome / Mozilla Firefox) pada PC, Tablet, atau Smartphone, lalu akses URL sistem yang telah dibagikan (Dev/Production URL).</li>
+    <li><strong>Mode Tamu (View-Only):</strong> Pengguna umum atau tamu dapat langsung melihat dashboard, statistik rekam medis evakuasi, dan grafik secara real-time tanpa perlu melakukan login.</li>
+    <li><strong>Masuk ke Akun (Login):</strong> 
+      <ul>
+        <li>Klik tombol <strong>[ MASUK ]</strong> di sudut kanan atas navbar.</li>
+        <li>Masukkan <strong>Username</strong> dan <strong>Password</strong> akun Anda.</li>
+        <li>Contoh Akun Super Admin Utama: Username <mark>hendra</mark> | Password <mark>101110</mark>.</li>
+      </ul>
+    </li>
+    <li><strong>Sinkronisasi & Real-Time Data:</strong>
+      <ul>
+        <li>Sistem secara otomatis memantau pembaruan data spreadsheet setiap 2 detik di latar belakang.</li>
+        <li>Gunakan tombol <strong>[ Sinkron ]</strong> di bilah atas untuk memperbarui data rekam medis secara instan kapan saja.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>II. ATURAN HAK AKSES AKUN (RBAC)</h2>
+  <table class="table-rules">
+    <thead>
+      <tr>
+        <th>Fitur / Aksi</th>
+        <th>Tamu (Guest)</th>
+        <th>Operator</th>
+        <th>Super Admin</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Lihat Data & Grafik Dashboard</strong></td>
+        <td>✅ Ya (View-Only)</td>
+        <td>✅ Ya</td>
+        <td>✅ Ya</td>
+      </tr>
+      <tr>
+        <td><strong>Sinkronisasi Instan [ Sinkron ]</strong></td>
+        <td>❌ Tidak</td>
+        <td>✅ Ya</td>
+        <td>✅ Ya</td>
+      </tr>
+      <tr>
+        <td><strong>Buat Surat Baru / Edit Data Pasien</strong></td>
+        <td>❌ Tidak (Wajib Login)</td>
+        <td>✅ Ya</td>
+        <td>✅ Ya</td>
+      </tr>
+      <tr>
+        <td><strong>Pengaturan Real-Time, Tambah & Hapus Akun</strong></td>
+        <td>❌ Tidak</td>
+        <td>❌ Tidak</td>
+        <td>✅ Khusus Admin (Hendra)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>III. PANDUAN PENGHAPUSAN (DELETE) AKUN PENGGUNA</h2>
+  <p>Penghapusan akun operator atau tamu di dalam sistem diatur dengan ketentuan keamanan yang ketat:</p>
+  <ol>
+    <li><strong>Hak Akses Hapus Akun:</strong> Hanya <strong>Super Admin Utama</strong> (akun <mark>hendra</mark>) yang memiliki kewenangan untuk mengakses menu <strong>"Tambah Akun & Hak Akses"</strong> dan melakukan penghapusan akun. Operator dan Tamu tidak memiliki akses ke menu ini.</li>
+    <li><strong>Langkah-langkah Menghapus Akun:</strong>
+      <ul>
+        <li>Masuk ke sistem menggunakan akun Super Admin (<mark>hendra</mark> / Password: <mark>101110</mark>).</li>
+        <li>Pada bilah navigasi atas, klik tombol emas <strong>[ Tambah Akun & Hak Akses ]</strong>.</li>
+        <li>Pada daftar akun terdaftar, cari nama pengguna atau operator yang ingin dihapus.</li>
+        <li>Klik tombol ikon tempat sampah berwarna merah <strong>[ Hapus / Delete ]</strong> pada baris akun tersebut.</li>
+        <li>Konfirmasi peringatan dialog sistem. Akun akan langsung dihapus permanen dari server dan disk sistem.</li>
+      </ul>
+    </li>
+    <li><strong>Ketentuan Perlindungan Akun Utama:</strong> Akun Super Admin utama (<mark>hendra</mark>) dilindungi oleh sistem dan <strong>tidak dapat dihapus</strong> untuk mencegah kehilangan akses administratif penuh terhadap sistem.</li>
+  </ol>
+
+  <h2>IV. ATURAN KETAT NOMOR SURAT (ANTI-DUPLIKASI)</h2>
+  <div class="box-info" style="border-left-color: #b91c1c; background: #fdf2f2;">
+    <strong>PERHATIAN KRITIS:</strong> Berdasarkan kebijakan operasional tertib administrasi Kesdam XVII/Cenderawasih:
+    <ul>
+      <li><strong>Nomor Surat (srt) WAJIB UNIK:</strong> Sistem mendeteksi nomor surat secara otomatis.</li>
+      <li>Apabila ditemukan nomor surat yang <strong>ganda/double</strong>, sistem secara otomatis <strong>MEMBLOKIR</strong> proses pengiriman data baru, penyimpanan, unduh berkas (*download*), dan pencetakan surat (*print*).</li>
+      <li>Pastikan setiap pengajuan surat evakuasi baru memiliki nomor urut surat dinas yang berbeda (contoh: <code>B/83/EV/2026</code>).</li>
+    </ul>
+  </div>
+
+  <h2>V. BANTUAN & DUKUNGAN TEKNIS</h2>
+  <p>Jika mengalami kendala teknis, gangguan jaringan, atau memerlukan penambahan hak akses operator baru, silakan hubungi Administrator Utama sistem (<strong>Hendra, ND</strong>).</p>
+
+  <div class="footer">
+    <div class="signature">
+      <p>Jayapura, 7 November 2026</p>
+      <p><strong>A.n. Kepala Kesehatan Kodam XVII/Cenderawasih</strong><br>Administrator Sistem SIYANKES</p>
+      <br><br><br>
+      <p><strong><u>Hendra, ND</u></strong><br>Super Admin / Pengembang Sistem</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "sourceType": "google_sheet",
+  "sheetUrl": "https://docs.google.com/spreadsheets/d/1IT7kt76lGkvXMUlI18W3uF6xcQtfdv5Dxvn3cvyqA7o/edit?usp=sharing",
+  "autoSyncEnabled": true,
+  "intervalSeconds": 15,
+  "lastSyncTime": "23.33.55 WIB",
+  "lastSyncStatus": "success",
+  "recordsCount": 107
+}

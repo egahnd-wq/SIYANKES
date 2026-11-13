@@ -1,0 +1,47 @@
+[
+  {
+    "uid": "admin-hendra",
+    "username": "hendra",
+    "password": "101110",
+    "name": "Hendra (Admin)",
+    "email": "egahnd@gmail.com",
+    "role": "superadmin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "uid": "opr-vevi",
+    "username": "vevi",
+    "password": "vevi123",
+    "name": "Opr 1",
+    "email": "vevi@kesdam.local",
+    "role": "operator",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "uid": "opr-sugi",
+    "username": "sugi",
+    "password": "sugi123",
+    "name": "Opr 2",
+    "email": "sugi@kesdam.local",
+    "role": "operator",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "uid": "opr-icha",
+    "username": "icha",
+    "password": "icha123",
+    "name": "Adm.Yankes",
+    "email": "icha@kesdam.local",
+    "role": "operator",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "uid": "opr-andriani",
+    "username": "andriani",
+    "password": "wayang123",
+    "name": "Paur Yankes",
+    "email": "andriani@kesdam.local",
+    "role": "operator",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  }
+]
